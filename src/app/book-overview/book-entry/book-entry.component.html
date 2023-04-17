@@ -1,0 +1,5 @@
+<h3>book-entry</h3>
+<div>Title: {{ book?.title }}</div>
+<div>Author: {{ book?.author }}</div>
+<input *ngIf="!!book" type="text" [(ngModel)]="book.author">
+<button (click)="onSelectBtnClick()">Rent the book</button>

@@ -1,0 +1,2 @@
+<h2>book-overview</h2>
+<app-book-entry *ngFor="let book of books" [book]="book" (selectBook)="rentBook($event)"></app-book-entry>
